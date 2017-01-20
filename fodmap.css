@@ -1,0 +1,76 @@
+.divbutton{
+  background-color:orange;
+
+  font-family: sans-serif;
+  color:white;
+  text-align:center;
+  vertical-align:middle;
+
+  border-radius:5px;
+  padding:15px;
+  margin:18px 0;
+
+  cursor:pointer;
+}
+
+.divbutton:hover{
+  color:black;
+}
+
+#fodapp-container{
+  float:left;
+  max-width:500px;
+  min-width:300px;
+  min-height:500px;
+  margin-left:40px;
+}
+
+#fodapp-img-container{
+  float:left;
+  min-width:200px;
+}
+
+.result{
+  display:none;
+  margin:0.5em 1.5em;
+}
+
+#foodinput{
+  font-size:2.5em;
+  width:100%;
+}
+
+#result-container{
+  display:none;
+  border-top:1pt white solid;
+  border-left:1pt white solid;
+  box-shadow:2px 2px 8px #aaa;
+}
+
+#food{
+  font-size:3em;
+  font-style:italic;
+  margin:0.5em;
+  display:inline-block;
+  line-height:85%;
+}
+
+#recipes{
+  margin:0 1.5em 2.5em 2.5em;
+  font-style:italic;
+  padding: 0 10px 10px 10px;
+  line-height: 1.2em;
+}
+
+#recipes p{
+  margin:0;
+}
+
+#checknotes{
+  display:none;
+  margin-left:1.9em;
+  margin-top:-2em;
+  line-height:115%;
+  font-size:0.8em;
+  font-style:italic;
+}

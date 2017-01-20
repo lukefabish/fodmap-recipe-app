@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>FODMAP Recipe App</title>
+	<link rel="stylesheet" href="/fodmap-recipe-app/fodmap.css" />
+</head>
+<body>
+	<div>
+		<div id="fodapp-img-container">
+			<img src="/fodmap-recipe-app/food-slot-machine.png" alt="fodmap diet food slot machine" width="256" height="300"/>
+		</div>
+		<div id="fodapp-container">
+			<div id="fodapp-query">
+				<div><span style="font-size:1.2em;"><strong>Search for a food</strong> (<em>hint: use the auto-suggest values for the best results</em>):</span></div>
+				<input id="foodinput" class="awesomplete"/>
+				<div id="button" style="width:4em;" class="divbutton" onclick="reportFood()">Go!</div>
+			</div>
+			<div id="result-container">
+				<div>
+					<div id="food"></div>
+					<div style="float:right;margin-right:1.5em;width:10em;" class="divbutton" onclick="startOver()">Search Again</div>
+				</div>
+				<div id="no-result" class="result">
+					<p>Hint: use the values suggested as you type by clicking on them. Also, try plurals, such as &#8216;onions&#8217; instead of &#8216;onion&#8217;.
+				</div>
+				<div id="high-result" class="result">
+					<p>FODMAP Levels: <span style="color:red;">High</span></p>
+					<p>People diagnosed with IBS should keep these foods to a minimum.</p>
+				</div>
+				<div id="moderate-result" class="result">
+					FODMAP Levels: <span style="color:orange;">Moderate</span>
+					<p>Suggested maximum: <span id="quantity"></span></p>
+					<p>People diagnosed with IBS should be able to tolerate a moderate amount of this food. Note that some individuals may have stronger reactions to this food than others.</p>
+				</div>
+				<div id="low-result" class="result">
+					<p>FODMAP Levels: <span style="color:green;">Low</span></p>
+					<p>People diagnosed with IBS should be able to eat this food safely. Note that some individuals may have stronger reactions to this food than others.</p>
+				</div>
+				<p style="margin-left:1.5em;">Low-FODMAP Recipes:
+				<span id="norecipe" style="display:none;">None found.</span>
+				<div id="checknotes"><br>Please check the &#8216;Notes&#8217; section of each recipe to see low-FODMAP recommendations.</div></p>
+				<div id="recipes" style="margin-left:2.5em;"></div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="/fodmap-recipe-app/awesomplete/awesomplete.css" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/fodmap-recipe-app/awesomplete/awesomplete.min.js"></script>
+	<script type="text/javascript" src="/fodmap-recipe-app/fodmap.js"></script>
+</body>
+</html>
